@@ -100,30 +100,6 @@ input[type=radio]:checked ~ .title .fa-solid {
  transform: rotate(180deg);
 }
 
-@keyframes flipdown {
- 0% {
-   opacity: 0;
-   transform-origin: top center;
-   transform: rotateX(-90deg);
- }
- 5% {
-   opacity: 1;
- }
- 80% {
-   transform: rotateX(8deg);
- }
- 83% {
-   transform: rotateX(6deg);
- }
- 92% {
-   transform: rotateX(-3deg);
- }
- 100% {
-   transform-origin: top center;
-   transform: rotateX(0deg);
- }
-}
-
 .transition, .fa-solid, img {
  transition: all 1s ease-in-out;
 }
@@ -164,6 +140,30 @@ li:nth-of-type(8) {
 
 li:last-of-type {
  padding-bottom: 0;
+}
+
+@keyframes flipdown {
+ 0% {
+   opacity: 0;
+   transform-origin: top center;
+   transform: rotateX(-90deg);
+ }
+ 5% {
+   opacity: 1;
+ }
+ 80% {
+   transform: rotateX(8deg);
+ }
+ 83% {
+   transform: rotateX(6deg);
+ }
+ 92% {
+   transform: rotateX(-3deg);
+ }
+ 100% {
+   transform-origin: top center;
+   transform: rotateX(0deg);
+ }
 }
 
 @media (hover:hover) {
