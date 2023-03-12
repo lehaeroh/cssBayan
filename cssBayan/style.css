@@ -1,6 +1,6 @@
 @font-face {
  font-family: Proxima Nova Regular;
- src: url("./20552.otf") format("opentype");
+ src: url("./assets/font/Font\ Proxima\ Nova.otf") format("opentype");
  }
 
 body {
@@ -45,9 +45,7 @@ ul {
 }
 
 li {
- /* width: 39em; */
  padding: 0;
- /* margin: 0; */
  padding-top: 0.1em;
  border-top: 0.2em dashed #98b65e;
 }
@@ -149,7 +147,7 @@ input[type=radio]:checked ~ .title .fa-solid {
 }
 
 .transition, .fa-solid, img {
- transition: all 0.5s ease-in-out;
+ transition: all 1s ease-in-out;
 }
 
 .flipIn, ul li, h1 {
@@ -190,15 +188,6 @@ li:last-of-type {
  padding-bottom: 0;
 }
 
-.footer {
- display: flex;
- justify-content: space-around ;
-
- background-color: #aab938;
- padding: 1em 1.25em;
-}
-
-
 @media (max-width:820px) {
  html {
     font-size: 140%;
@@ -229,28 +218,27 @@ li:last-of-type {
  }
 }
 
-/* @media (hover:hover) {
+@media (hover:hover) {
  input[type=radio]:hover ~ img {
-    margin-top: 1.25em;
-    max-height: fit-content;
-    transition: all 1s;
-    opacity: 1;
-    }
-   
-    input[type=radio]:hover ~ h2 {
-      color: #cec97f;
-      }
+  margin-top: 1.25em;
+  max-height: fit-content;
+  transition: all 1s;
+  opacity: 1;
+ }
 
-      .accordion:hover .fa-solid {
-       display: inline-block;
-     }
-     
-     .accordion:hover h2 {
-       color: #cec97f;
-      }
-    
-      input[type=radio]:hover ~ .title .fa-solid{
-       transform: rotate(180deg);
-     }
-     
-} */
+ input[type=radio]:hover ~ h2 {
+  color: #cec97f;
+ }
+
+ .accordion:hover .fa-solid {
+  display: inline-block;
+ }
+
+ .accordion:hover h2 {
+  color: #cec97f;
+ }
+
+ input[type=radio]:hover ~ .title .fa-solid{
+  transform: rotate(180deg);
+ }
+}
