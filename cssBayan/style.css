@@ -172,6 +172,7 @@ li:last-of-type {
   max-height: fit-content;
   transition: all 1s;
   opacity: 1;
+  animation: flipdown 1s ease both;
  }
 
  input[type=radio]:hover ~ h2 {
